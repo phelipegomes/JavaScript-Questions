@@ -1,1 +1,1 @@
-# JavaScript-Questions
+# JavaScript Questions and mySolutions
