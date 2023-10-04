@@ -1,4 +1,4 @@
-Link da Aplicação: https://replit.com/@phelipegomes1/Market-Recomendator?v=1
+Link da Aplicação: https://replit.com/@phelipegomes1/Market-Recomendator-TS-as-JS
 
 # Restaurant Search Application
 
