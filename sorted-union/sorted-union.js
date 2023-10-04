@@ -1,23 +1,14 @@
-function sumFibs(num) {
-    let acc = [];
-    let index = 1;
-    let flag = true
-    while(flag) {
-      if(acc.length < 1) {
-        acc.push(0,1)
-      }
-      if(acc[acc.length - 1] < num) {
-        if(acc[index] + acc[index - 1] > num) {
-          flag = false
-        } else {
-          acc.push(acc[index] + acc[index - 1])
-          index++
-        }
-      } else {
-        flag = false
-      }
+function uniteUnique(...arr) {
+  let myArr = [];
+  for(const i in arr){
+    for(const j in arr[i]) {
+      myArr.push(arr[i][j]);
     }
-    
-    return acc.filter(num => num % 2 !== 0).reduce((acc, num) => acc + num,0);
   }
-  sumFibs(10);
+  return myArr.filter(function(num, idx) {
+    if(myArr.indexOf(myArr[idx]) == idx) {
+      return num
+    }
+  })
+}
+console.log(uniteUnique([1, 3, 2], [5, 2, 1, 4], [2, 1]));
