@@ -1,21 +1,23 @@
 Link do site: https://replit.com/@phelipegomes1/Sorted-Union?v=1
 
-# Questão Sorted Union 
+# Sorted Union 
 
-Escreva uma função que receba dois ou mais arrays e retorne um novo array de valores únicos na ordem dos arrays originais fornecidos.
+Write a function that takes two or more arrays and returns a new array of unique values in the order of the original provided arrays.
 
-Em outras palavras, todos os valores presentes em todos os arrays devem ser incluídos em sua ordem original, mas sem duplicatas no array final.
+In other words, all values present from all arrays should be included in their original order, but with no duplicates in the final array.
 
-Os números únicos devem ser classificados pela ordem original, mas a matriz final não deve ser classificada pela ordem numérica.
+The unique numbers should be sorted by their original order, but the final array should not be sorted in numerical order.
+
+Check the assertion tests for examples.
 
 ## Tests: 
 
-1: uniteUnique([1, 3, 2], [5, 2, 1, 4], [2, 1]) should return [1, 3, 2, 5, 4].
+## 1: uniteUnique([1, 3, 2], [5, 2, 1, 4], [2, 1]) should return [1, 3, 2, 5, 4].
 
-2: Waiting:uniteUnique([1, 2, 3], [5, 2, 1]) should return [1, 2, 3, 5].
+## 2: Waiting:uniteUnique([1, 2, 3], [5, 2, 1]) should return [1, 2, 3, 5].
 
-3: Waiting:uniteUnique([1, 2, 3], [5, 2, 1, 4], [2, 1], [6, 7, 8]) should return [1, 2, 3, 5, 4, 6, 7, 8].
+## 3: Waiting:uniteUnique([1, 2, 3], [5, 2, 1, 4], [2, 1], [6, 7, 8]) should return [1, 2, 3, 5, 4, 6, 7, 8].
 
-4: Waiting:uniteUnique([1, 3, 2], [5, 4], [5, 6]) should return [1, 3, 2, 5, 4, 6].
+## 4: Waiting:uniteUnique([1, 3, 2], [5, 4], [5, 6]) should return [1, 3, 2, 5, 4, 6].
 
-5: Waiting:uniteUnique([1, 3, 2, 3], [5, 2, 1, 4], [2, 1]) should return [1, 3, 2, 5, 4].
+## 5: Waiting:uniteUnique([1, 3, 2, 3], [5, 2, 1, 4], [2, 1]) should return [1, 3, 2, 5, 4].
