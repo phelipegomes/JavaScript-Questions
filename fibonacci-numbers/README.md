@@ -10,14 +10,14 @@ For example, sumFibs(10) should return 10 because all odd Fibonacci numbers less
 
 ## Tests
 
-### 1: Waiting:sumFibs(1) should return a number.
+## 1: Waiting:sumFibs(1) should return a number.
 
-### 2: Waiting:sumFibs(1000) should return 1785.
+## 2: Waiting:sumFibs(1000) should return 1785.
 
-### 3: Waiting:sumFibs(4000000) should return 4613732.
+## 3: Waiting:sumFibs(4000000) should return 4613732.
 
-### 4: Waiting:sumFibs(4) should return 5.
+## 4: Waiting:sumFibs(4) should return 5.
 
-### 5: Waiting:sumFibs(75024) should return 60696.
+## 5: Waiting:sumFibs(75024) should return 60696.
 
-### 6: Waiting:sumFibs(75025) should return 135721.
+## 6: Waiting:sumFibs(75025) should return 135721.
