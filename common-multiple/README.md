@@ -1,4 +1,4 @@
-nota imporetante: Resolucao feita para experimento e aprimoramento de técnicas de programação orientado a objeto, foi desenvolvido um código optimizado e funcional que esta incluso neste directório.
+IMPORTANTE: Resolucao feita para experimento e aprimoramento de técnicas de programação orientado a objeto, foi desenvolvido um código optimizado e funcional que esta incluso neste directório.
 
 # Common multiples
 
