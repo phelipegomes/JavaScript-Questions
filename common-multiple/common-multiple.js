@@ -18,46 +18,40 @@ function smallestCommons(arr) {
       myObject.dividers.push(index)
     }
   
+    // Instancio a propiedade needStop para parada do iterador
     myObject.needStop = false
-    myObject.mmc = [];
     let idx = 0;
-    while(idx < 10) {
+  
+    //Loop test
+    while(!myObject.needStop) {
       idx++
-      if(myObject.seccondMMC >= 10) {
-        myObject.needStop = true
-      } 
+  
+      // Extracao do mmc do primeiro parametro
       myObject.firstMMC.push(myObject.parameters[0] + myObject.firstMMC[myObject.firstMMC.length - 1]) 
+  
+      // Extracao do mmc do segundo parametro
       myObject.seccondMMC.push(myObject.parameters[1] + myObject.seccondMMC[myObject.seccondMMC.length - 1]) 
+     
+      // Aqui eu filtro os valores comuns num array chamado mmc
+      myObject.mmc = myObject.firstMMC.filter(number => myObject.seccondMMC.indexOf(number) > 0)
   
-      if(myObject.firstMMC === myObject.seccondMMC) {
-          console.log(myObject.firstMMC, myObject.seccondMMC)
-      }
-    }
+      // Inicializo um contador para encontrar um MMC divisivel por todos
+      
   
-    for(const index in myObject.seccondMMC) {
-      if(myObject.firstMMC.indexOf(myObject.seccondMMC[index]) > 1) {
-        myObject.mmc.push(myObject.seccondMMC[index])
-      }
-    }
-  
-    // Inicializo um contador para encontrar um MMC divisivel por todos da matriz de divisores
+      // Itero sobre cada divisor para encontrar o MMC divisivel por todos
+      for(const idx in myObject.mmc) {
         myObject.count = 0;
-  
-        // Itero sobre cada divisor para encontrar o MMC divisivel por todos da matriz de divisores
         myObject.dividers.forEach(divisor => {
-          if(myObject.mmc % divisor === 0) {
+          if(myObject.mmc[idx] % divisor === 0) {
             myObject.count++
-            console.log(`variavel num [${myObject.firstMMC}] é divisivel por [${divisor}]`);
-          }
-  
-          // Se todos os divisores forem divisiveis pelo MMC, eu retorno o MMC
+          } 
           if(myObject.count === myObject.dividers.length) {
-            myObject.result = 0
+            myObject.needStop = true;
+            myObject.result = myObject.mmc[idx]
           }
         })
-    console.log(myObject.firstMMC)
-    console.log(myObject.seccondMMC)
-    
-    return 0; 
+      }
+    }
+    return myObject.result
   }
-  smallestCommons([1,5]);
+  console.log(smallestCommons([2,10]));
