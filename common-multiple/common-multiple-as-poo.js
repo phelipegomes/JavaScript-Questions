@@ -1,27 +1,28 @@
 function smallestCommons(arr) {
-  // Crie o objeto para o desafio
+  // Crio o objeto para o desafio
   const myObject = {};
 
-  // Inclua a matriz ordenada na propriedade parameters
-  myObject.parameters = arr.slice().sort((a, b) => a - b);
+  // Sorteio os valores mínimo e máximo corretamente
+  const min = Math.min(...arr);
+  const max = Math.max(...arr);
 
-  // Inicialize uma matriz que receberá os possíveis divisores
+  // Inicializando uma matriz que receberá os possíveis divisores
   myObject.dividers = [];
 
-  // Iteração que adiciona todos os divisores na matriz de divisores
-  for (let index = myObject.parameters[0] + 1; index < myObject.parameters[1]; index++) {
+  // Iteração para adicionar todos os divisores na matriz de divisores
+  for (let index = min; index <= max; index++) {
     myObject.dividers.push(index);
   }
 
-  // Inicialize a propriedade needStop para parada do iterador
+  // Inicializo a propriedade needStop para parada do iterador
   myObject.needStop = false;
 
-  let mmcValue = myObject.parameters[1]; 
+  let mmcValue = max;
 
   while (!myObject.needStop) {
-    mmcValue += myObject.parameters[1]; 
+    mmcValue += max;
 
-    // Verifique se o MMC do segundo parâmetro é divisível pelo primeiro parâmetro
+    // Aqui eu verifico se o MMC do segundo parâmetro é divisível por todos os divisores
     let isCommonMultiple = true;
     for (const divisor of myObject.dividers) {
       if (mmcValue % divisor !== 0) {
@@ -39,4 +40,4 @@ function smallestCommons(arr) {
   return myObject.result;
 }
 
-console.log(smallestCommons([2, 10])); 
+console.log(smallestCommons([23, 18])); // Saída: 6056820
