@@ -3,7 +3,7 @@ function smallestCommons(arr) {
   const myObject = {};
 
   // Inclua a matriz ordenada na propriedade parameters
-  myObject.parameters = arr.slice().sort((a, b) => a - b); // Copie e ordene a matriz
+  myObject.parameters = arr.slice().sort((a, b) => a - b);
 
   // Inicialize uma matriz que receberá os possíveis divisores
   myObject.dividers = [];
@@ -16,10 +16,10 @@ function smallestCommons(arr) {
   // Inicialize a propriedade needStop para parada do iterador
   myObject.needStop = false;
 
-  let mmcValue = myObject.parameters[1]; // Comece com o valor do segundo parâmetro
+  let mmcValue = myObject.parameters[1]; 
 
   while (!myObject.needStop) {
-    mmcValue += myObject.parameters[1]; // Atualize o valor do MMC do segundo parâmetro
+    mmcValue += myObject.parameters[1]; 
 
     // Verifique se o MMC do segundo parâmetro é divisível pelo primeiro parâmetro
     let isCommonMultiple = true;
