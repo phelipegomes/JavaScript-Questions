@@ -40,4 +40,4 @@ function smallestCommons(arr) {
   return myObject.result;
 }
 
-console.log(smallestCommons([23, 18])); // Saída: 6056820
+console.log(smallestCommons([23, 18]));
