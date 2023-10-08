@@ -1,4 +1,6 @@
-IMPORTANTE: Resolucao feita para experimento e aprimoramento de técnicas de programação orientado a objeto, foi desenvolvido um código optimizado e funcional que esta incluso neste directório.
+IMPORTANTE: Resolucao as POO feita para experimento e aprimoramento de técnicas de Programação Orientada a Objeto, foi desenvolvido um código optimizado e funcional que esta incluso neste directório chamado common-multiples-mysolution.js
+
+link do site: 
 
 # Common multiples
 
