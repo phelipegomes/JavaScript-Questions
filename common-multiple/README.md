@@ -8,3 +8,9 @@ The range will be an array of two numbers that will not necessarily be in numeri
 
 For example, if given 1 and 3, find the smallest common multiple of both 1 and 3 that is also evenly divisible by all numbers between 1 and 3. The answer here would be 6.
 
+1: smallestCommons([1, 5]) should return a number.
+2: Passed:smallestCommons([1, 5]) should return 60.
+3: Passed:smallestCommons([5, 1]) should return 60.
+4: Passed:smallestCommons([2, 10]) should return 2520.
+5: Passed:smallestCommons([1, 13]) should return 360360.
+6: Passed:smallestCommons([23, 18]) should return 6056820.
