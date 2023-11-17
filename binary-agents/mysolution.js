@@ -1,8 +1,7 @@
 function binaryAgent(str) {
   return str
             .split(' ')
-            .map(binaryBlock => String
-            .fromCharCode(Number.parseInt(binaryBlock, 2)))
+            .map(binaryBlock => String.fromCharCode(Number.parseInt(binaryBlock, 2)))
             .join('');
 }
 
